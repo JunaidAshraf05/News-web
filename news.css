@@ -90,3 +90,31 @@ nav{
 .hover-link:active{
     color: red;
 }
+.nav-links{
+    gap: 16px;
+}
+
+.search-bar{
+    height: 32px;
+    gap: 8px;
+}
+.news-input{
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+}
+
+.search-button{
+    background-color:var(--accent-color-dark);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.search-button:hover{
+    background-color: #577592;
+}
