@@ -134,3 +134,12 @@ nav{
     background-color: #577592;
     color: black;
 }
+main{
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-cotainer{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
