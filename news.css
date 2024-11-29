@@ -47,13 +47,12 @@ ul{
 
 
 }
-
-nav{
-    background-color: #f3faff;
-    box-shadow: 0 0 4px #bbd0e2;
-    position:fixed;
-    top: 0%;
+.flex{
+    display: flex;
+    align-items: center;
 }
+
+
 nav{
     background-color:#f3faff;
     box-shadow: 0 0 4px #bbd0e2;
@@ -69,16 +68,32 @@ nav{
 }
 
 .main-nav{
-    justify-content: center;
+    justify-content: space-between;
     padding-block: 8px ;
 
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center items vertically */
 }
 .company-logo img{
     width: 100px;
 }
 .nav-links{
     gap: 16px;
+    flex-direction: row;
 }
+.nav-links ul {
+    display: flex; /* Use flexbox for the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove bullet points */
+}
+
+
+.nav-links li {
+    margin: 0 15px;}
 
 .hover-link{
     cursor: pointer;
@@ -108,7 +123,7 @@ nav{
 
 .search-button{
     background-color:var(--accent-color-dark);
-    color: white;
+    color:whitesmoke;
     padding: 8px 24px;
     border: none;
     border-radius: 4px;
@@ -117,4 +132,5 @@ nav{
 }
 .search-button:hover{
     background-color: #577592;
+    color: black;
 }
